@@ -64,7 +64,7 @@ changed to “development”.
     // Only invoked if mode is "production"
     $app->configureMode('production', function () use ($app) {
         $app->config(array(
-            'log.enable' => true,
+            'log.enabled' => true,
             'debug' => false
         ));
     });
@@ -72,7 +72,7 @@ changed to “development”.
     // Only invoked if mode is "development"
     $app->configureMode('development', function () use ($app) {
         $app->config(array(
-            'log.enable' => false,
+            'log.enabled' => false,
             'debug' => true
         ));
     });
